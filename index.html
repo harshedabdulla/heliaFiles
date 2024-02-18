@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPFS Image Uploader</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        color: #333;
+      }
+      input[type='file'],
+      input[type='text'] {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: calc(100% - 22px);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      #imageCid,
+      #retrievedImage {
+        display: block;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+      }
+      #retrievedImage {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Upload Image to IPFS</h1>
+    <input type="file" id="imageUpload" />
+    <button onclick="uploadImage()">Upload</button>
+    <br />
+    <div id="imageCid">CID will appear here after upload</div>
+    <br />
+
+    <h1>Retrieve Image from IPFS</h1>
+    <input type="text" id="imageCID" placeholder="Enter CID here" />
+    <button onclick="retrieveImage()">Retrieve</button>
+    <br />
+    <img
+      id="retrievedImage"
+      src=""
+      alt="Retrieved Image Will Display Here"
+      style="max-width: 500px; margin-top: 20px"
+    />
+
+    <script src="app.js"></script>
+  </body>
+</html>
