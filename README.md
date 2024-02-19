@@ -1,7 +1,7 @@
-# HeliaFiles
+# ipfsFiles
 
 ## Introduction
-HeliaFiles is a simple, user-friendly web application that demonstrates the power of IPFS (InterPlanetary File System) for storing and retrieving images in a decentralized manner. Built with Node.js and leveraging the Helia library, it offers an intuitive interface for users to upload images to IPFS and retrieve them using unique content identifiers (CIDs).
+ipfsFiles is a simple, user-friendly web application that demonstrates the power of IPFS (InterPlanetary File System) for storing and retrieving images in a decentralized manner. Built with Node.js and leveraging the ipfs-core library, it offers an intuitive interface for users to upload images to IPFS and retrieve them using unique content identifiers (CIDs).
 
 ## Features
 - **Image Upload**: Easily upload images to the IPFS network.
@@ -15,7 +15,7 @@ Before you get started, ensure you have the following installed:
 - IPFS (if interacting directly with a local IPFS node)
 
 ## Installation
-To set up HeliaFiles on your local machine, follow these steps:
+To set up ipfsFiles on your local machine, follow these steps:
 
 1. Clone the repository:
 ```bash
